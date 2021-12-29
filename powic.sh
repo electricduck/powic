@@ -175,7 +175,7 @@ function togglealias() {
         rm $INSTALL_PATH
     else
         echoc info "Installing \`pwsh\` alias into $INSTALL_PATH..."
-        echo "!#/usr/bash/env bash
+        echo "!#/usr/bin/env bash
 $POWIC_PATH \$@" > $INSTALL_PATH
         chmod +x $INSTALL_PATH
     fi
